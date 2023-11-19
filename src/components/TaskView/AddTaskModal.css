@@ -1,0 +1,32 @@
+.add-task-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 380px;
+    padding: 10px;
+    border-bottom: solid gray 1px;
+    /* background-color: blueviolet; */
+}
+
+.add-task-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    height: 500px;
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.add-task-body-row-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 380px;
+    /* padding: 10px; */
+}

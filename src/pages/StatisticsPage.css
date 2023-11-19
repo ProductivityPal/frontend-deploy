@@ -1,0 +1,23 @@
+.chart-container {
+    background-color: #FDFAF6;
+    position: relative;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    /* padding-left: 25px;
+    padding-right: -150px; */
+}
+.chart-container.timeline {
+    margin-top: 7.5vh;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: -100px;
+
+}
+.title {
+    height: 200px;
+    text-align: center;
+    padding-top: 50%;
+
+}

@@ -1,0 +1,13 @@
+.fifteen-min-block {
+    height: 15px;
+}
+
+.divider {
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+.calendar-hour {
+    margin: 0;
+    padding: 0;
+}

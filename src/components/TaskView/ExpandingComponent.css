@@ -1,0 +1,56 @@
+.expand-container {
+    overflow: hidden;
+    /* background-color: #E7C3A188; */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-bottom: 5px;
+    border: solid #E7C3A1 1px;
+    font-size: small;
+    border-radius: 5px;
+    /* padding-left: 2px;
+    padding-right: 2px; */
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+.expandingComponentHidden {
+    transition: all 1s;
+    display: none;
+}
+
+.expandingComponentExpanded {
+    display: block;
+    margin-left: 5px;
+    /* border: 2px solid red; */
+}
+
+.task-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expand-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: -5px;
+    margin-left: -2vw;
+    /* transform: scale(0.7); */
+}
+
+/* .category-menu {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid grey;
+} */
+
+.circleButton {
+    margin-bottom: 5px;
+    margin-left: -2vw;
+}

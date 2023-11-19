@@ -1,0 +1,18 @@
+.donut-chart-container {
+    position: relative;
+    /* Add other styles for the chart container */
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Add other styles for the centered text */
+}
+
+.label {
+    margin-left: 20px;
+    margin-right: 20px;
+}

@@ -1,0 +1,32 @@
+.today-cell {
+    width: 150px; /* Customize the width as needed */
+  }
+
+.week-view-calendar {
+  margin: 2px;
+  padding: auto;
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
+
+.calendar-container {
+  overflow-x: auto;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.calendar-hour__header {
+  font-size: small;
+  color: #999;
+  height: 76px;
+  /* margin-top: 5px; */
+}
