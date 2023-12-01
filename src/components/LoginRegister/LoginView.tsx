@@ -40,7 +40,7 @@ export function LoginView() {
         password: password
       };
       console.log(reqBody)
-      fetch('https://productivitypal-56uf.onrender.com/auth/authenticate', {
+      fetch('https://productivitypal-backend.onrender.com/auth/authenticate', {
         headers: {
           'Content-Type': 'application/json'
         },

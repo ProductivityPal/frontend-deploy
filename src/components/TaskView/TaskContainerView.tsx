@@ -17,10 +17,10 @@ import '../../styles/styles.css'
 import { useNavigate } from 'react-router-dom';
 
 const selectedButtonStyle = (isSelected: Boolean) => isSelected ? {} : { opacity: 0.5 };
-const fetchTasks = fetchData<Task[]>('https://productivitypal-56uf.onrender.com/task');
-const fetchCalendarTasks = fetchData<Task[]>('https://productivitypal-56uf.onrender.com/calendar/tasks');
-const fetchAlgoSortList = (id: String) => fetchData<Task[]>('https://productivitypal-56uf.onrender.com/task/algosort');
-const putEnergyLevel = (energyLevel: String) => putData<{}, number>(`https://productivitypal-56uf.onrender.com/user/energyLevel/${energyLevel}`, {});
+const fetchTasks = fetchData<Task[]>('https://productivitypal-backend.onrender.com/task');
+const fetchCalendarTasks = fetchData<Task[]>('https://productivitypal-backend.onrender.com/calendar/tasks');
+const fetchAlgoSortList = (id: String) => fetchData<Task[]>('https://productivitypal-backend.onrender.com/task/algosort');
+const putEnergyLevel = (energyLevel: String) => putData<{}, number>(`https://productivitypal-backend.onrender.com/user/energyLevel/${energyLevel}`, {});
 const TASK_LIST_COMPONENT_ID = "tasksList";
 
 export function TaskContainerView() {

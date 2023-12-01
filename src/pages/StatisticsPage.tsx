@@ -10,8 +10,8 @@ import { fetchData } from '../utils/fetchUtils';
 import dayjs, { Dayjs } from 'dayjs';
 import { Stats, StatsCategory } from '../types/Stats';
 
-const energyStats = fetchData('https://productivitypal-56uf.onrender.com/statistic/energyLevel')
-const fetchStatistics = (params: any) => fetchData<Stats>('https://productivitypal-56uf.onrender.com/statistic', params);
+const energyStats = fetchData('https://productivitypal-backend.onrender.com/statistic/energyLevel')
+const fetchStatistics = (params: any) => fetchData<Stats>('https://productivitypal-backend.onrender.com/statistic', params);
 function StatisticsPage() {
     const [doneTasks, setDoneTasks] = useState(0)
     const [undoneTasks, setUndoneTasks] = useState(0)

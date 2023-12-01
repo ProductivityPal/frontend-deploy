@@ -29,7 +29,7 @@ export function EmailConfirmedView() {
                 console.log(searchParams.get("email"));
                 console.log(searchParams.get("code"));
 
-                postData<{}, number>('https://productivitypal-56uf.onrender.com/email/verification/verify', {email: searchParams.get("email"), code: searchParams.get("code")})();
+                postData<{}, number>('https://productivitypal-backend.onrender.com/email/verification/verify', {email: searchParams.get("email"), code: searchParams.get("code")})();
                 setValidUrl(true);
 
             } catch (err){

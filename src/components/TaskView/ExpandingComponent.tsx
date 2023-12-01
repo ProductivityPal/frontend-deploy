@@ -49,13 +49,13 @@ export function ExpandingComponent(props: TaskViewProps) {
 
     function completeTask(taskId: number) {
         console.log("complete Task!" + taskId)
-        putData<{}, number>(`https://productivitypal-56uf.onrender.com/task/${taskId}`, { "completed": true })();
+        putData<{}, number>(`https://productivitypal-backend.onrender.com/task/${taskId}`, { "completed": true })();
 
         props.onComplete()
     }
     function deleteTask(taskId: number) {
         console.log("delete Task!" + taskId)
-        deleteData<{}, number>(`https://productivitypal-56uf.onrender.com/task/${taskId}`, {})();
+        deleteData<{}, number>(`https://productivitypal-backend.onrender.com/task/${taskId}`, {})();
 
         props.onComplete()
     }
@@ -78,7 +78,7 @@ export function ExpandingComponent(props: TaskViewProps) {
     }
     function sendCategory(category: string) {
         // send category to backend
-        putData<{}, number>(`https://productivitypal-56uf.onrender.com/task/${props.task.id}`, { "category": category })();
+        putData<{}, number>(`https://productivitypal-backend.onrender.com/task/${props.task.id}`, { "category": category })();
         setCategory(category)
         setTaskColor(convertCategoryToColor(category))
 
@@ -96,7 +96,7 @@ export function ExpandingComponent(props: TaskViewProps) {
         setSubtasks([...subtasks, newSubtask]);
 
         // send to backend
-        postData<{}, number>(`https://productivitypal-56uf.onrender.com/task/subtask`, newSubtask)();
+        postData<{}, number>(`https://productivitypal-backend.onrender.com/task/subtask`, newSubtask)();
         console.log("SENDING SUBTASK")
 
         setSubtaskName('')

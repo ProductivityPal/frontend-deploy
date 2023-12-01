@@ -34,7 +34,7 @@ export function NavigationMenu() {
 
     function sendEnergyLevel() {
         setExpandedEnergyPanel(false)
-        putData<{}, number>(`https://productivitypal-56uf.onrender.com/user/energyLevel/${energyLevel}`, energyLevel)();
+        putData<{}, number>(`https://productivitypal-backend.onrender.com/user/energyLevel/${energyLevel}`, energyLevel)();
     }
 
     const handleEnergyChange = (value: any) => {

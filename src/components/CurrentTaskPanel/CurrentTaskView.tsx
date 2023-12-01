@@ -30,7 +30,7 @@ export function CurrentTaskView(props: CurrentTaskProps) {
         "&:hover": {backgroundColor: "#FFFFFF50", 'border': '1px solid #F8DEB3'},
     }
     useEffect(() => {
-        // const fetchSubtasks = fetchData<Task[]>(`https://productivitypal-56uf.onrender.com/${props.taskId}/task/subtask`)
+        // const fetchSubtasks = fetchData<Task[]>(`https://productivitypal-backend.onrender.com/${props.taskId}/task/subtask`)
         // fetchSubtasks((subtasks: Task[]) => {
         //     const subtaskList = subtasks.map((subtask) => subtask.name)
         //     setSubtaskList(subtaskList)

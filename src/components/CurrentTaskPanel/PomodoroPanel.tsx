@@ -65,7 +65,7 @@ export function PomodoroPanel(props: PomdoroProps) {
         console.log("Pomodoro time 2: ", pomodoroTimeSum)
 
         // TODO: send to backend
-        postData<{}, number>(`https://productivitypal-56uf.onrender.com/task/pomodoro`, {taskId: props.taskId, completionTime: pomodoroTimeSum})();
+        postData<{}, number>(`https://productivitypal-backend.onrender.com/task/pomodoro`, {taskId: props.taskId, completionTime: pomodoroTimeSum})();
         // divide time by 60
         props.closePanel()
     }

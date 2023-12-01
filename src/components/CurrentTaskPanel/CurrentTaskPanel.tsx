@@ -7,14 +7,14 @@ import { CalendarTask, converDbTaskToTask, convetDbCalendarTaskToCalendarTask, T
 import { TasksCalendarContext } from '../../utils/tasksCalendarContext';
 
 
-const fetchCalendarTasks = fetchData<CalendarTask[]>('https://productivitypal-56uf.onrender.com/calendar/tasks');
+const fetchCalendarTasks = fetchData<CalendarTask[]>('https://productivitypal-backend.onrender.com/calendar/tasks');
 export function CurrentTaskPanel() {
     const [currentTask, setCurrentTask] = useState<CalendarTask | null>()
     const [nextTask, setNextTask] = useState<CalendarTask>()
     const { calendar } = useContext(TasksCalendarContext);
     function handleTaskComplete(taskId: number) {
         console.log("complete Task!" + taskId)
-        putData<{}, number>(`https://productivitypal-56uf.onrender.com/task/${taskId}`, { "completed": true })();
+        putData<{}, number>(`https://productivitypal-backend.onrender.com/task/${taskId}`, { "completed": true })();
         setCurrentTask(null)
     }
 

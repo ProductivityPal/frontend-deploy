@@ -32,7 +32,7 @@ type NewTaskProps = {
     };
 }
 
-const postNewTask = (newTask: NewTaskProps) => postData<{}, number>('https://productivitypal-56uf.onrender.com/task', { ...newTask, time_estimate: newTask.timeEstimate });
+const postNewTask = (newTask: NewTaskProps) => postData<{}, number>('https://productivitypal-backend.onrender.com/task', { ...newTask, time_estimate: newTask.timeEstimate });
 const selectedButtonStyle = (isSelected: Boolean) => isSelected ? {} : { opacity: 0.5 };
 
 export function AddTaskModal(props: AddTaskModalProps) {
@@ -81,7 +81,7 @@ export function AddTaskModal(props: AddTaskModalProps) {
 
     const updateTask = (taskId: number, newTaskData: any) => {
         // id to path
-        putData<{}, number>(`https://productivitypal-56uf.onrender.com/task/${taskId}`, { ...newTaskData })();
+        putData<{}, number>(`https://productivitypal-backend.onrender.com/task/${taskId}`, { ...newTaskData })();
         // TODO
         // props.updateTask({...newTaskData})
     }

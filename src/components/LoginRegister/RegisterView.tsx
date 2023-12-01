@@ -44,7 +44,7 @@ export function RegisterView() {
         password: password
       };
 
-      fetch('https://productivitypal-56uf.onrender.com/auth/register', {
+      fetch('https://productivitypal-backend.onrender.com/auth/register', {
         headers: {
           'Content-Type': 'application/json'
         },
@@ -53,7 +53,7 @@ export function RegisterView() {
       }).then(res => res.json()).then(body => {
         console.log("body", body);
         // setJwt(body.token);
-        fetch('https://productivitypal-56uf.onrender.com/email/verification/send', {
+        fetch('https://productivitypal-backend.onrender.com/email/verification/send', {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${body.token}`,

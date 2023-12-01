@@ -15,7 +15,7 @@ import { converDateToDestinationId } from '../components/Calendar/CalendarHour';
 import { useNavigate } from 'react-router-dom';
 
  function CalendarPage() {
-  const fetchTasks = fetchData<Task[]>('https://productivitypal-56uf.onrender.com/calendar/tasks');
+  const fetchTasks = fetchData<Task[]>('https://productivitypal-backend.onrender.com/calendar/tasks');
   const [calendar, setCalendar] = useState({ tasksList: [] });
   const calendarContext = { calendar, moveTask: moveTask(setCalendar), addTask: addTask(setCalendar), setTasks: setTasks(setCalendar), modifyTask: modifyTask(setCalendar) }
   const navigate = useNavigate();

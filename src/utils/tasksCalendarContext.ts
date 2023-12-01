@@ -77,10 +77,10 @@ export const moveTask = (setCalendar: any) => (from: { droppableId: string, inde
     console.log(`Add task with id ${taskId} to date ${convertDateFormat(to.droppableId)}`)
    
     if (from.droppableId != 'tasksList') {
-        putData<{}, number>(`https://productivitypal-56uf.onrender.com/calendar/task/${taskId}`, { "startDate": convertDateFormat(to.droppableId)})();
+        putData<{}, number>(`https://productivitypal-backend.onrender.com/calendar/task/${taskId}`, { "startDate": convertDateFormat(to.droppableId)})();
     }
     else {
-        postData<{}, number>(`https://productivitypal-56uf.onrender.com/calendar/task/${taskId}`, { "startDate": convertDateFormat(to.droppableId),
+        postData<{}, number>(`https://productivitypal-backend.onrender.com/calendar/task/${taskId}`, { "startDate": convertDateFormat(to.droppableId),
         /*"endDate": convertDateFormat(to.droppableId, duration_here!), */ })();
     }
 
